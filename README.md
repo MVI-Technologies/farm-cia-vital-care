@@ -1,73 +1,164 @@
-# Welcome to your Lovable project
+# 💊 Farmácia Vital Care
 
-## Project info
+Landing page moderna e responsiva para farmácia, desenvolvida com React, TypeScript, Tailwind CSS e shadcn/ui.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+![React](https://img.shields.io/badge/React-18.3-61DAFB?style=flat-square&logo=react)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.8-3178C6?style=flat-square&logo=typescript)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3.4-06B6D4?style=flat-square&logo=tailwindcss)
+![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?style=flat-square&logo=vite)
 
-## How can I edit this code?
+## 📋 Sobre o Projeto
 
-There are several ways of editing your application.
+Landing page institucional para farmácia com foco em conversão via WhatsApp. O projeto foi desenvolvido pensando na experiência do usuário, com design moderno, responsivo e otimizado para dispositivos móveis.
 
-**Use Lovable**
+### ✨ Funcionalidades
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+- **Header fixo** com navegação suave e menu mobile
+- **Hero Section** com imagem de fundo e call-to-action para WhatsApp
+- **Badges de Confiança** - Compra segura, farmácia autorizada e garantia de satisfação
+- **Diferenciais** - Atendimento especializado, entrega rápida, preços acessíveis
+- **Produtos e Serviços** - Medicamentos, genéricos, higiene, vitaminas e serviços farmacêuticos
+- **Promoções** - Destaques de ofertas especiais
+- **Depoimentos** - Avaliações de clientes satisfeitos
+- **CTA (Call-to-Action)** - Seção final com botão do WhatsApp
+- **Footer** completo com informações de contato e links
 
-Changes made via Lovable will be committed automatically to this repo.
+## 🚀 Tecnologias
 
-**Use your preferred IDE**
+- **[React 18](https://react.dev/)** - Biblioteca JavaScript para interfaces
+- **[TypeScript](https://www.typescriptlang.org/)** - Superset JavaScript com tipagem estática
+- **[Vite](https://vitejs.dev/)** - Build tool ultra-rápido
+- **[Tailwind CSS](https://tailwindcss.com/)** - Framework CSS utility-first
+- **[shadcn/ui](https://ui.shadcn.com/)** - Componentes acessíveis e customizáveis
+- **[Lucide React](https://lucide.dev/)** - Ícones modernos
+- **[React Router](https://reactrouter.com/)** - Roteamento SPA
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+## 📁 Estrutura do Projeto
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+```
+src/
+├── assets/              # Imagens e arquivos estáticos
+├── components/          # Componentes React
+│   ├── ui/              # Componentes shadcn/ui
+│   ├── Header.tsx       # Cabeçalho com navegação
+│   ├── Hero.tsx         # Seção principal
+│   ├── TrustBadges.tsx  # Badges de confiança
+│   ├── Features.tsx     # Diferenciais
+│   ├── Services.tsx     # Produtos e serviços
+│   ├── Promotions.tsx   # Promoções
+│   ├── Testimonials.tsx # Depoimentos
+│   ├── CTA.tsx          # Call-to-action
+│   └── Footer.tsx       # Rodapé
+├── hooks/               # Hooks customizados
+├── lib/                 # Utilitários
+├── pages/               # Páginas da aplicação
+│   ├── Index.tsx        # Página principal
+│   └── NotFound.tsx     # Página 404
+├── App.tsx              # Componente raiz
+├── main.tsx             # Entry point
+└── index.css            # Estilos globais
+```
 
-Follow these steps:
+## 🛠️ Instalação
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+### Pré-requisitos
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- Node.js 18+ 
+- npm, yarn, pnpm ou bun
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Passos
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+1. **Clone o repositório**
+```bash
+git clone https://github.com/seu-usuario/farm-cia-vital-care.git
+cd farm-cia-vital-care
+```
+
+2. **Instale as dependências**
+```bash
+npm install
+# ou
+yarn install
+# ou
+pnpm install
+# ou
+bun install
+```
+
+3. **Inicie o servidor de desenvolvimento**
+```bash
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+4. **Acesse no navegador**
+```
+http://localhost:5173
+```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 📦 Scripts Disponíveis
 
-**Use GitHub Codespaces**
+| Comando | Descrição |
+|---------|-----------|
+| `npm run dev` | Inicia o servidor de desenvolvimento |
+| `npm run build` | Gera build de produção |
+| `npm run build:dev` | Gera build de desenvolvimento |
+| `npm run preview` | Visualiza o build de produção |
+| `npm run lint` | Executa o ESLint |
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## ⚙️ Configuração
 
-## What technologies are used for this project?
+### WhatsApp
 
-This project is built with:
+Para configurar o número do WhatsApp, edite os seguintes arquivos:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+- `src/components/Header.tsx`
+- `src/components/Hero.tsx`
+- `src/components/CTA.tsx`
 
-## How can I deploy this project?
+Procure por `whatsappNumber` e substitua pelo seu número:
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+```typescript
+const whatsappNumber = "5511999999999"; // Seu número aqui
+```
 
-## Can I connect a custom domain to my Lovable project?
+### Cores e Tema
 
-Yes, you can!
+As cores podem ser customizadas em `src/index.css` através das variáveis CSS:
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+```css
+:root {
+  --primary: 158 70% 40%;
+  --secondary: 200 60% 50%;
+  /* ... outras variáveis */
+}
+```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 🎨 Design
+
+O projeto utiliza um design moderno com:
+
+- **Paleta de cores** verde (saúde/farmácia) com acentos em azul
+- **Tipografia** clara e legível
+- **Espaçamento** consistente
+- **Animações** sutis para melhorar a UX
+- **Layout responsivo** mobile-first
+
+## 📱 Responsividade
+
+O site é totalmente responsivo com breakpoints:
+
+- **Mobile**: < 768px
+- **Tablet**: 768px - 1024px
+- **Desktop**: > 1024px
+
+## 🤝 Contribuindo
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests.
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+---
+
+Desenvolvido com 💚 para Farmácia Vital Care

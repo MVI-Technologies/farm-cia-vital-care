@@ -4,9 +4,9 @@ export function TrustBadges() {
   return (
     <section className="py-12 bg-muted/50">
       <div className="container">
-        <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+        <div className="flex flex-col items-center gap-6 md:flex-row md:justify-center md:gap-16">
+          <div className="flex items-center gap-3 w-full max-w-[280px] md:w-auto md:max-w-none">
+            <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
               <Shield className="w-6 h-6 text-primary" />
             </div>
             <div>
@@ -15,8 +15,8 @@ export function TrustBadges() {
             </div>
           </div>
           
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+          <div className="flex items-center gap-3 w-full max-w-[280px] md:w-auto md:max-w-none">
+            <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
               <Award className="w-6 h-6 text-primary" />
             </div>
             <div>
@@ -25,8 +25,8 @@ export function TrustBadges() {
             </div>
           </div>
           
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+          <div className="flex items-center gap-3 w-full max-w-[280px] md:w-auto md:max-w-none">
+            <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center flex-shrink-0">
               <CheckCircle className="w-6 h-6 text-primary" />
             </div>
             <div>
